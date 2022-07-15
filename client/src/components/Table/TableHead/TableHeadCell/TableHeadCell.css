@@ -1,0 +1,13 @@
+.TableHeadCell {
+  min-height: 40px;
+  color: #192127;
+  border-radius: 3px;
+  background-color: #5bc197;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 1px;
+}

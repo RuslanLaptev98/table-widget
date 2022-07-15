@@ -6,13 +6,13 @@ import TableHead from './TableHead';
 
 const Table: React.FC = () => {
   React.useEffect(() => {
-    tableStore.fetchData();
+    //tableStore.fetchData();
   }, []);
   return (
     <div>
-      <TableHead />
+      <TableHead rows={['Дата', 'Название', 'Количество', 'Расстояние']} />
       {tableStore.data?.map((row) => (
-        <TableRow row={row} />
+        <TableRow key={row.title} row={row} />
       ))}
     </div>
   );

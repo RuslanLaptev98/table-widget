@@ -1,0 +1,10 @@
+.TableRow {
+  display: grid;
+  grid-template-columns: 15vw 20vw 10vw 10vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .TableRow {
+    grid-template-columns: 30vw 40vw 10vw 10vw;
+  }
+}
