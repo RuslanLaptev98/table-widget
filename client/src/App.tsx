@@ -1,7 +1,14 @@
 import React from 'react';
+import Filter from './components/Filter';
+import Table from './components/Table';
 
-function App() {
-  return <div>initial setup</div>;
-}
+const App: React.FC = () => {
+  return (
+    <div className='container'>
+      <Filter />
+      <Table />
+    </div>
+  );
+};
 
 export default App;

@@ -1,6 +1,6 @@
-import QueryObj from '../types/QueryObj';
+import Query from '../types/Query';
 
-const generateWhereClause = (obj: QueryObj): string => {
+const generateWhereClause = (obj: Query): string => {
   if (Object.keys(obj).length === 0) return '';
 
   const { column, condition, value } = obj;

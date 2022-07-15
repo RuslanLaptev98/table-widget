@@ -1,7 +1,12 @@
 import React from 'react';
+import Row from '../../../types/Row';
 
-const TableRow = () => {
-  return <div>TableRow</div>;
+interface TableRowProps {
+  row: Row;
+}
+
+const TableRow: React.FC<TableRowProps> = ({ row }) => {
+  return <div>{row.title}</div>;
 };
 
 export default TableRow;
