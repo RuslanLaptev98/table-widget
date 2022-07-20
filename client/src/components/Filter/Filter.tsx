@@ -6,18 +6,15 @@ import Select from './Select';
 
 const Filter: React.FC = () => {
   return (
-    <div className='Filter'>
+    <section className='Filter'>
+      <Select name='column' options={['Name', 'Quantity', 'Distance']} />
       <Select
-        name='Колонка'
-        options={['Название', 'Количество', 'Расстояние']}
-      />
-      <Select
-        name='Условие'
-        options={['Больше', 'Меньше', 'Равно', 'Содержит']}
+        name='condition'
+        options={['More', 'Less', 'Equals', 'Contains']}
       />
       <Input />
-      <Button text='Фильтровать' />
-    </div>
+      <Button text='Filter' />
+    </section>
   );
 };
 

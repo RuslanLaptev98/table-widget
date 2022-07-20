@@ -10,7 +10,7 @@ const Table: React.FC = () => {
   }, []);
   return (
     <div>
-      <TableHead rows={['Дата', 'Название', 'Количество', 'Расстояние']} />
+      <TableHead rows={['Date', 'Name', 'Quantity', 'Distance']} />
       {tableStore.data?.map((row) => (
         <TableRow key={row.title} row={row} />
       ))}
