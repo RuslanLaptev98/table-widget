@@ -1,7 +1,9 @@
 .Button {
   height: 40px;
+  min-width: 100px;
   background-color: #85b6bf;
-  border-radius: 10px;
+  box-shadow: 1px 1px 5px #c481a2;
+  border-radius: 4px;
   color: #192127;
   font-size: 1rem;
   display: flex;
@@ -9,4 +11,12 @@
   align-items: center;
   text-align: center;
   padding: 0 8px;
+  cursor: pointer;
+}
+.Button:hover {
+  box-shadow: none;
+  opacity: 0.9;
+}
+.Button:active {
+  background-color: #5bc197;
 }
