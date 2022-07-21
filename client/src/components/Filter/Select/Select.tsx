@@ -8,11 +8,16 @@ interface SelectProps {
 
 const Select: React.FC<SelectProps> = ({ name, options }) => {
   return (
-    <select name={name} className='Select'>
-      {options.map((option) => (
-        <option key={option}>{option}</option>
-      ))}
-    </select>
+    <div className='Select'>
+      <select name={name} id={name} className='Select__select'>
+        {options.map((option) => (
+          <option key={option}>{option}</option>
+        ))}
+      </select>
+      <label htmlFor={name} className='Select__label'>
+        {name}
+      </label>
+    </div>
   );
 };
 

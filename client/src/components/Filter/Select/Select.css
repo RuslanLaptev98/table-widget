@@ -1,12 +1,29 @@
 .Select {
+  position: relative;
+  height: 40px;
+  width: 110px;
+}
+.Select__select {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   outline: none;
-  border: 1px solid #85b6bf;
+  border: 1px solid rgba(133, 182, 191, 0.5);
   background: #192127;
   border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(133, 182, 191, 0.5);
   color: #85b6bf;
   font-size: 1rem;
   padding: 0 8px;
+  text-shadow: 1px 1px 5px #c481a2;
 }
-.Select:invalid {
-  opacity: 0.5;
+.Select__label {
+  position: absolute;
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.3rem;
+  padding: 0 4px;
+  border-radius: 2px;
+  color: #85b6bf;
+  background-color: #192127;
 }
