@@ -5,6 +5,6 @@
 
 @media only screen and (max-width: 900px) {
   .TableRow {
-    grid-template-columns: 30vw 40vw 10vw 10vw;
+    grid-template-columns: 18vw 30vw 18vw 19vw;
   }
 }

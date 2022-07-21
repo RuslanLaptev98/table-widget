@@ -10,7 +10,7 @@ const TableHead: React.FC<TableHeadProps> = ({ rows }) => {
   return (
     <div className='TableHead'>
       {rows.map((row) => (
-        <TableHeadCell text={row} />
+        <TableHeadCell key={row} text={row} />
       ))}
     </div>
   );
