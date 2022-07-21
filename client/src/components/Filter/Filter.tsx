@@ -12,7 +12,7 @@ const Filter: React.FC = () => {
         name='condition'
         options={['More', 'Less', 'Equals', 'Contains']}
       />
-      <Input />
+      <Input id='value' />
       <Button text='Filter' />
     </section>
   );

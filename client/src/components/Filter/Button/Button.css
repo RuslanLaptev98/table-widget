@@ -1,6 +1,6 @@
 .Button {
   height: 40px;
-  min-width: 100px;
+  width: 100px;
   background-color: #85b6bf;
   box-shadow: 1px 1px 5px #c481a2;
   border-radius: 4px;

@@ -1,6 +1,6 @@
 .Filter {
   display: flex;
-  margin: 1rem 0;
-  width: 580px;
+  flex-direction: column;
+  height: 300px;
   justify-content: space-around;
 }

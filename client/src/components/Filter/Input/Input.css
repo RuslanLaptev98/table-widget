@@ -1,14 +1,43 @@
 .Input {
+  height: 40px;
+  width: 200px;
+  position: relative;
+}
+.Input__input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   outline: none;
-  border: 1px solid #85b6bf;
-  background: #192127;
+  border: 1px solid rgba(133, 182, 191, 0.5);
+  background-color: #192127;
   border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(133, 182, 191, 0.5);
   color: #85b6bf;
+  text-shadow: 1px 1px 5px #c481a2;
   font-size: 1rem;
   padding: 0 8px;
 }
+.Input__input:focus {
+  border: 1px solid #85b6bf;
+}
 
-.Input::placeholder {
+.Input__label {
+  cursor: text;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   color: #85b6bf;
+  background-color: #192127;
   opacity: 0.5;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.Input__input:focus ~ .Input__label,
+.Input__input:not(:placeholder-shown).Input__input:not(:focus) ~ .Input__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.3rem;
+  opacity: 1;
+  padding: 0 4px;
+  border-radius: 2px;
 }
