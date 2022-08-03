@@ -1,9 +1,9 @@
 import Query from '../types/Query';
 
 const generateQueryString = (query: Query | undefined): string => {
-  if (query === undefined) return 'https://greve-livre-45456.herokuapp.com/';
+  if (query === undefined) return 'http://localhost:4000/';
 
-  return `https://greve-livre-45456.herokuapp.com/?column=${query.column}&condition=${query.condition}&value=${query.value}`;
+  return `http://localhost:4000/?column=${query.column}&condition=${query.condition}&value=${query.value}`;
 };
 
 export default generateQueryString;

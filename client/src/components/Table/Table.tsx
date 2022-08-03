@@ -6,7 +6,7 @@ import TableHead from './TableHead';
 
 const Table: React.FC = () => {
   React.useEffect(() => {
-    //tableStore.fetchData();
+    tableStore.fetchData({ column: 'title', condition: 'contains', value: '' });
   }, []);
   return (
     <div>
