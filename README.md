@@ -1,6 +1,6 @@
 ## Table Widget
 
-Pet project
+Practice project
 
 ## Frontend Tech Stack
 
@@ -9,10 +9,12 @@ Pet project
 
 ## Backend Tech Stack
 
+- [TypeScript](https://www.typescriptlang.org/)
 - [Express](https://expressjs.com/)
 - [PostgreSQL](https://www.postgresql.org/)
 
 ## Hosted
 
+- React app: [Netlify](https://www.netlify.com/)
 - Express app: [Heroku](https://heroku.com)
 - PostgreSQL db: [Heroku](https://heroku.com)

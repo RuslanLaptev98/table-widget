@@ -21,10 +21,10 @@ const Filter: React.FC = () => {
       <Select
         name='Condition'
         options={[
+          { title: 'Contains', value: 'contains' },
           { title: 'More', value: 'greater' },
           { title: 'Less', value: 'less' },
           { title: 'Equals', value: 'equals' },
-          { title: 'Contains', value: 'contains' },
         ]}
         onChange={(e: any) => filterStore.setCondition(e.target.value)}
       />

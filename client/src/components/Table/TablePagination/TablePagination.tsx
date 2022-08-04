@@ -18,10 +18,10 @@ const TablePagination: React.FC = () => {
       <span className='TablePagination__page'>Page {tableStore.page}</span>
       <button
         className={`TablePagination__button ${
-          tableStore.data.length === 0 ? 'TablePagination__button-disabled' : ''
+          tableStore.data.length < 10 ? 'TablePagination__button-disabled' : ''
         }`}
         onClick={tableStore.nextPage}
-        disabled={tableStore.data.length === 0 ? true : false}
+        disabled={tableStore.data.length < 10 ? true : false}
       >
         {'>'}
       </button>
