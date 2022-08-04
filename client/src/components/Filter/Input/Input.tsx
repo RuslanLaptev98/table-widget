@@ -3,9 +3,10 @@ import './Input.css';
 
 interface InputProps {
   id: string;
+  onChange: any;
 }
 
-const Input: React.FC<InputProps> = ({ id }) => {
+const Input: React.FC<InputProps> = ({ id, onChange }) => {
   return (
     <div className='Input'>
       <input
@@ -13,6 +14,7 @@ const Input: React.FC<InputProps> = ({ id }) => {
         placeholder=' '
         id={id}
         autoComplete='off'
+        onChange={onChange}
       />
       <label className='Input__label' htmlFor={id}>
         Value

@@ -4,13 +4,14 @@ import tableStore from '../../stores/tableStore';
 import TableRow from './TableRow';
 import TableHead from './TableHead';
 import TablePagination from './TablePagination';
+import filterStore from '../../stores/filterStore';
 
 const Table: React.FC = () => {
   React.useEffect(() => {
     tableStore.fetchData({
-      column: 'title',
-      condition: 'contains',
-      value: '',
+      column: filterStore.column,
+      condition: filterStore.condition,
+      value: filterStore.value,
       page: tableStore.page,
     });
   }, [tableStore.page]);
