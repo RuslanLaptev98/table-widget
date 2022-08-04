@@ -21,6 +21,17 @@
 .TablePagination__button:active {
   background-color: #5bc197;
 }
+.TablePagination__button-disabled {
+  box-shadow: none;
+  opacity: 0.75;
+}
+.TablePagination__button-disabled:hover {
+  box-shadow: none;
+  opacity: 0.75;
+}
+.TablePagination__button-disabled:active {
+  background-color: #85b6bf;
+}
 .TablePagination__page {
   color: #85b6bf;
   padding: 0 0.75rem;

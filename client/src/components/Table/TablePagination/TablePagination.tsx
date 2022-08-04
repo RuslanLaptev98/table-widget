@@ -6,11 +6,23 @@ import { observer } from 'mobx-react-lite';
 const TablePagination: React.FC = () => {
   return (
     <div className='TablePagination'>
-      <button className='TablePagination__button' onClick={tableStore.prevPage}>
+      <button
+        className={`TablePagination__button ${
+          tableStore.page === 1 ? 'TablePagination__button-disabled' : ''
+        }`}
+        onClick={tableStore.prevPage}
+        disabled={tableStore.page === 1 ? true : false}
+      >
         {'<'}
       </button>
       <span className='TablePagination__page'>Page {tableStore.page}</span>
-      <button className='TablePagination__button' onClick={tableStore.nextPage}>
+      <button
+        className={`TablePagination__button ${
+          tableStore.data.length === 0 ? 'TablePagination__button-disabled' : ''
+        }`}
+        onClick={tableStore.nextPage}
+        disabled={tableStore.data.length === 0 ? true : false}
+      >
         {'>'}
       </button>
     </div>
