@@ -1,7 +1,7 @@
 import Query from '../types/Query';
 
 const generateWhereClause = (obj: Query): string => {
-  if (Object.keys(obj).length === 0) return '';
+  if (Object.keys(obj).length === 0) return 'WHERE LIMIT 10';
 
   const { column, condition, value } = obj;
 
@@ -29,7 +29,10 @@ const generateWhereClause = (obj: Query): string => {
       break;
   }
 
-  return `WHERE ${column} ${sqlCondition}`;
+  return `WHERE ${column} ${sqlCondition} LIMIT 10 OFFSET ${(
+    (obj.page - 1) *
+    10
+  ).toString()}`;
 };
 
 export default generateWhereClause;

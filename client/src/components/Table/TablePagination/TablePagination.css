@@ -1,0 +1,27 @@
+.TablePagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.TablePagination__button {
+  background-color: #85b6bf;
+  box-shadow: 1px 1px 5px #c481a2;
+  border-radius: 4px;
+  color: #192127;
+  font-size: 1rem;
+  width: 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.TablePagination__button:hover {
+  box-shadow: none;
+  opacity: 0.9;
+}
+.TablePagination__button:active {
+  background-color: #5bc197;
+}
+.TablePagination__page {
+  color: #85b6bf;
+  padding: 0 0.75rem;
+}
