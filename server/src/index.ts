@@ -14,8 +14,10 @@ app.use(cors());
 app.get('/', async (req: Request<{}, {}, {}, Query>, res: Response) => {
   try {
     const whereClause = generateWhereClause(req.query);
-    console.log(req.query, req.query.page);
     const data = await pool.query(`SELECT * FROM data ${whereClause}`);
+    data.rows.forEach((row, i) => {
+      data.rows[i].date = row.date?.toUTCString().slice(0, 16);
+    });
     res.json(data.rows);
   } catch (error) {
     console.error(error);

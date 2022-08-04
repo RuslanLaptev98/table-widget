@@ -8,11 +8,9 @@ class TableStoreService {
 
     return fetch(queryString)
       .then((res) => {
-        console.log(res);
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         return data;
       })
       .catch((error) => console.log(error));
