@@ -16,6 +16,11 @@
   font-size: 1rem;
   padding: 0 8px;
   text-shadow: 1px 1px 5px #c481a2;
+  cursor: pointer;
+}
+.Select__select:hover {
+  box-shadow: none;
+  opacity: 0.9;
 }
 .Select__label {
   position: absolute;
