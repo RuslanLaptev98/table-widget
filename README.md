@@ -1,5 +1,7 @@
 ## Table Widget
 
+[table-widget.netlify.app](https://table-widget.netlify.app/)
+
 Practice project
 
 ## Frontend Tech Stack
